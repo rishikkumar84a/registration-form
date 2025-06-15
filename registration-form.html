@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e8e8e8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-box {
+      background-color: #cfe0c3;
+      padding: 35px 30px;
+      border-radius: 12px;
+      width: 320px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .signup-title {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 18px;
+    }
+
+    .login-options {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 12px;
+      
+    }
+
+    .icon-btn {
+      background-color: transparent;
+      border: 1px solid #232222;
+      border-radius: 25px;
+      padding: 8px 25px;
+      cursor: pointer;
+    }
+
+    .email-note {
+      text-align: center;
+      font-size: 0.85em;
+      color: #444;
+      margin: 10px 0;
+    }
+
+    .form-control {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    .register-btn {
+      background-color: #435e47;
+      color: #fff;
+      width: 50%;
+      height: 30px;
+      margin-left: 75px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .register-btn:hover {
+      background-color: #354b39;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-box">
+    <div class="signup-title">CREATE ACCOUNT</div>
+    <div class="login-options">
+      <button class="icon-btn">
+        <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google">
+      </button>
+      <button class="icon-btn">
+        <img src="https://img.icons8.com/ios-filled/16/000000/facebook-new.png" alt="Facebook">
+      </button>
+    </div>
+    <div class="email-note">or use your email for registration</div>
+    <form>
+      <input type="text" class="form-control" placeholder="Username" required>
+      <input type="email" class="form-control" placeholder="Email" required>
+      <input type="password" class="form-control" placeholder="Password" required>
+      <button type="submit" class="register-btn">SIGN UP</button>
+    </form>
+  </div>
+</body>
+</html>
